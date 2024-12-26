@@ -1,7 +1,7 @@
 #Chapter1: Hello World
 #2024.12.26
 #Jiyun Nam
-#@codeacademyy
+#@codeacademy
 
 
 #1. Print : print ("")
