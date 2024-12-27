@@ -2,17 +2,17 @@
 #Date:      2024.12.27
 #Creator:   Jiyun Nam
 
-weight = int(input("How weight it is?"))
+weight = float(input("How weight it is?"))
 
 #Ground shipping
 if weight <= 2:
-  costs=weight*1.50+0.00
+  costs=weight*1.50+20.00
 elif weight >= 2 and weight <= 6:
-  costs=weight*3.00+0.00
+  costs=weight*3.00+20.00
 elif weight >=6 and weight <= 10:
-  costs=weight*4.00+0.00
+  costs=weight*4.00+20.00
 else:
-  costs=weight*4.75+0.00
+  costs=weight*4.75+20.00
 print("Cost of the ground shipping is " + str(costs))
 
 #Ground Shipping Premium
