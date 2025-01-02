@@ -1,3 +1,11 @@
+#Project:   Basta Fazoolin
+#Date:      2025.01.01
+#Creator:   Jiyun Nam
+
+# Commnent
+# 2025.01.01
+# - Need to make interactive version
+
 class Menu:
   def __init__(self, name, items, start_time, end_time):
     self.name = name
