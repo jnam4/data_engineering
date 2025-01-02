@@ -1,5 +1,5 @@
 #Chapter7 : Type
-#2024.12.30
+#2024.12.31
 #Jiyun Nam
 #@codecademy
 
