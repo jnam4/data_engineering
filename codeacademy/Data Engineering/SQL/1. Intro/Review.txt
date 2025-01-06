@@ -1,3 +1,8 @@
+Title: Chapter 1 Review
+Date: 2025.01.05
+Creator: Jiyun Nam
+Credit: @codecademy
+
 Relational database: database that organize information into one or more tables.
 Talbe: collection of data organized into rows(records) and columns
 
