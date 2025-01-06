@@ -1,0 +1,25 @@
+Database - set of data stored in computer
+Relational Databse - type of Database. often store in tables
+Tables - columns & records 
+
+RDBMS - Relational Database Management system 
+        Allow to create, update, administer relational database
+SQL - structured query language
+    1) MySQL
+        pos:
+        dis: poor performance when scailing 
+    2) PostgreSQL
+        pos:
+        dis : slow performance other than MySQL
+    3) Oracle DB 
+    4) SQL server
+    5) SQLite
+
+codecademy use
+    1) SQLite - .sqlite 
+        text. datatype
+
+    2) PostgreSQL - .sql
+        varchar(n), char(n), or text datatype
+
+    
