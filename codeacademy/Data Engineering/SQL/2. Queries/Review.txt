@@ -1,0 +1,31 @@
+Title: Chapter 2 Review
+Date: 2025.01.06
+Creator: Jiyun Nam
+Credit: @codecademy
+
+SELECT
+ need to use everytime we want to query information 
+ 
+AS
+ renames column or table 
+
+DISTINCT
+ return unique value 
+
+WHERE
+ filter results based on conditions 
+
+LIKE, BETWEEN
+ special operators
+
+AND, OR
+ combines multiple conditions
+
+ORDER BY
+ sorts the results 
+
+LIMIT
+ specify numbers of row
+
+CASE
+ creates different output
