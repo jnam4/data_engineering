@@ -3,6 +3,20 @@ Date: 2025.01.06
 Creator: Jiyun Nam
 Credit: @codecademy
 
+except case, everything comes after FROM 
+SELECT * 
+FROM (table)
+WHERE __ 
+
+
+SELECT * 
+CASE 
+ WHERE __ THEN __ 
+ END AS __ 
+FROM (table)
+
+
+
 SELECT
  need to use everytime we want to query information 
  
