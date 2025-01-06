@@ -6,7 +6,9 @@
 -- ------------
 
 
--- -- 1. CREATE 
+
+-- ----------------
+-- 1. CREATE 
 -- Allow us to create new table in the database
 -- CREATE TABLE name (column_name datatype, ...);
 -- ----------------
@@ -23,8 +25,9 @@ CREATE TABLE celebs (
 
 
 
--- -- 2. INSERT
---  add new records
+-- ----------------
+-- 2. INSERT
+-- add new records
 -- ----------------
 INSERT INTO celebs (id, name, age)
 VALUES (1, 'Justin Bieber', 29);
@@ -42,6 +45,7 @@ VALUES (4, 'Taylor Swift', 33);
 
 
 
+-- ----------------
 -- 3. SELECT 
 -- fetch data from a database 
 -- SELECT name of column FROM table.
@@ -50,10 +54,10 @@ SELECT * FROM celebs;
 
 
 
+-- ----------------
 -- 4. Alter
 -- add new column to the table 
 -- ----------------
-
 ALTER TABLE celebs
 ADD COLUMN twitter_handle TEXT;
 -- add twitter_handle column that has text data type on the celebs table 
@@ -63,6 +67,7 @@ SELECT * FROM celebs;
 
 
 
+-- ----------------
 -- 5. Update
 -- use it when you want to change existing records
 -- ----------------
@@ -77,6 +82,7 @@ SELECT * FROM celebs;
 
 
 
+-- ----------------
 -- 6. DELETE
 -- deletes one or more rows from table 
 -- ----------------
@@ -89,6 +95,7 @@ SELECT * FROM celebs
 
 
 
+-- ----------------
 -- 7. Constraints 
 -- add information about how a column can be used are invoked after specifying the data type for a column 
 -- PK, FK, UNIQUE, NOT NULL, DEFAULT
