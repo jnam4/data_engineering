@@ -1,0 +1,3 @@
+.import /Users/yun/Desktop/fake_apps.csv fake_apps
+.schema
+select * from fake_apps limit 10 

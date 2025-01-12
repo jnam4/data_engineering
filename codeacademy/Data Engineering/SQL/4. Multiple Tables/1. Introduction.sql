@@ -136,3 +136,4 @@ LEFT JOIN online o
 WHERE o.id IS NULL; -- left join by newspaper_id. so there should be null for online_id
 
 
+select * from newspaper

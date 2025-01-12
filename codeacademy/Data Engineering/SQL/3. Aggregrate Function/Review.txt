@@ -1,0 +1,36 @@
+Title: Chapter 3 Review
+Date: 2025.01.06
+Creator: Jiyun Nam
+Credit: @codecademy
+
+Aggregate function 
+- combine multiple rows together to form a single value of meaningful interpretation
+
+COUNT():
+ count the number of rows
+
+SUM():
+ the sum of the values in the column 
+
+MAX() / MIN():
+ the largest/smallest value 
+
+AVG():
+ the average values in a column 
+
+ROUND():
+ round the vaues in the column 
+ in PostgreSQL, if the value is the float, have to ROUND(column::Decimal/Numeric, 2)
+
+AS a group 
+GROUP BY():
+ claused used with aggregate functions to combine data from one or more columns.
+ It can be used as 
+ GROUP BY 1, 2, 3.... 
+ (meaning 1=first column)
+
+Difference between Haivng() and While():
+ Having(): for aggregate property
+         clause filter groups 
+ While(): for single value  
+          clause filters rows
