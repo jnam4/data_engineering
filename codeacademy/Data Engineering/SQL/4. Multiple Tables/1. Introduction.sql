@@ -135,5 +135,133 @@ LEFT JOIN online o
   ON n.id = o.id
 WHERE o.id IS NULL; -- left join by newspaper_id. so there should be null for online_id
 
-
 select * from newspaper
+
+
+
+-- -------------
+-- 5. Primarky Key VS Foreign Key
+-- 
+-- PK requirements:
+-- None of the values can be NULL
+-- Each value must be unique and only one PK per table
+
+-- If PK appears in the different table, it is called as Foreign Key 
+-- SELECT * 
+-- FROM pk
+-- JOIN fk
+   -- ON pk.attributes = fk.attributes
+-- -------------
+-- 1. Identify PK, FK
+SELECT * FROM students ;
+-- id, first_name, last_name, email, class_id(foreign key)
+SELECT * FROM classes;
+-- id(priamry key), description, weeks, enrollment_cap 
+SELECT *
+FROM classes -- pk
+JOIN students -- fk
+  ON classes.id = students.class_id;
+
+
+
+-- -------------
+-- 6. Cross Join 
+
+-- CROSS JOIN: when we ened to compare each row of a table to a list of values.  
+-- -------------
+-- 1. Count people who subscribed during march
+SELECT count(*)
+FROM newspaper
+WHERE start_month <=3 AND end_month >=3;
+
+-- 2. show all the people from newspaper and cros join with months
+SELECT count(*)
+FROM newspaper
+CROSS JOIN months;
+
+-- 3. show all the people from newspaper and cross join the months to show which months did they subscribe
+SELECT count(*)
+FROM newspaper
+CROSS JOIN months
+WHERE start_month <= month AND end_month >= month;
+
+-- 4. show how many subscribers during each month.
+SELECT month,count(*) AS 'subscribers'
+FROM newspaper
+CROSS JOIN months
+WHERE start_month <= month AND end_month >= month
+GROUP BY month
+
+
+
+-- -------------
+-- 7. Union
+-- 
+-- SELECT *
+-- FROM table 1
+-- UNION
+-- SELECT *
+-- FROM table 2;
+--
+-- combine the tables. 
+-- tables must have the same number of column
+-- column must have the same data types in the same order as the first table 
+-- -------------
+-- 1. newspaper, online
+SELECT *
+FROM newspaper
+UNION
+SELECT *
+FROM online;
+
+
+
+-- -------------
+-- 8. With
+--
+-- 
+/* WITH previous_results AS (
+   SELECT ...
+   ...
+   ...
+   ...
+)
+SELECT *
+FROM previous_results
+JOIN customers
+  ON _____ = _____; */
+--
+-- With statement allow us perform a seperate query
+-- and save that query inside of the WITH clause
+-- -------------
+-- 1. Combine preivous_query and customers, and print out the customer_namem and subscriptions
+WITH previous_query AS(
+SELECT customer_id,
+  COUNT(subscription_id) AS 'subscriptions'
+FROM orders
+GROUP BY customer_id)
+SELECT customers.customer_name, previous_query.subscriptions
+FROM previous_query
+JOIN customers ON customers.customer_id = previous_query.customer_id
+
+  
+
+-- -------------
+
+
+
+
+
+-- -------------
+
+-- -------------
+
+
+
+
+
+-- -------------
+
+
+-- -------------
+

@@ -1,0 +1,32 @@
+-- ------------
+-- Chapter 5: 0. Introduction
+-- Date: 2025.01.11
+-- Author: Jiyun Nam
+-- Credit: codecademy
+-- ------------
+
+Schema
+gives overview of the purpose of the database along the data,
+how dataset organized into tables, how tables are internally structured,
+and how they relate to one another. 
+
+Define the purpose of your database
+Find the information that make up the database
+Organize your information into tables
+Structure your tables into columns of information
+Avoid redundant data that leads to inaccuracy and waste in space
+Identify the relationships between your tables and implement them
+
+
+DbDiagram.io - a free, simple tool to draw ER diagrams by just writing code, designed for developers and data analysts.
+SQLDBM - SQL Database Modeler
+DB Designer - online database schema design and modeling tool
+
+table names
+column names per table
+column types per table
+Preview: Docs Loading link description
+constraints per table, if any
+relationships between tables, if any
+
+
